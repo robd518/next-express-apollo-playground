@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# Data directory for the MySQL database
+dbdata
+
+# Env file
+.env
+
+# VSCode settings
+.vscode

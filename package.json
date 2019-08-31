@@ -1,0 +1,41 @@
+{
+  "name": "next-express-apollo-playground",
+  "version": "0.0.1",
+  "description": "Trying to get all this shit working together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r esm app/index.js",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robd518/next-express-apollo-playground.git"
+  },
+  "keywords": [
+    "nextjs",
+    "next",
+    "express",
+    "apollo",
+    "react",
+    "react-dom"
+  ],
+  "author": "Rob D'Aveta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robd518/next-express-apollo-playground/issues"
+  },
+  "homepage": "https://github.com/robd518/next-express-apollo-playground#readme",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "apollo": "^2.18.0",
+    "express": "^4.17.1",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
