@@ -1,10 +1,10 @@
 import express from 'express'
 import nextapp from './config/nextapp'
-import ExRouter from './config/router'
+import PagesRouter from './config/router'
 
 // Set up our express app
 const app = express()
-app.use('/', ExRouter)
+app.use('/', PagesRouter)
 const host = process.env.HOST || '0.0.0.0'
 const port = process.env.PORT || 8080
 

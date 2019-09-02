@@ -1,10 +1,14 @@
 import express from 'express'
 import nextapp from './nextapp'
+import { parse } from 'url'
 
-const ExRouter = express.Router()
+const PagesRouter = express.Router()
 
-ExRouter.get('/test', (req, res, next) => {
-    nextapp.render(req, res, '/test')
+PagesRouter.get('*', (req, res, next) => {
+    const url = parse(req.url, true)
+    console.log(url.pathname)
+    console.log(url.query)
+    nextapp.render(req, res, url.pathname || '', url.query)
 })
 
-export default ExRouter
+export default PagesRouter
