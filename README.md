@@ -1,2 +1,7 @@
 # next-express-apollo-playground
-No idea WTF I'm doing but here we gooooooooooo
+
+## How-to
+Make sure you've got Docker installed on your host, then
+- `cd next-express-apollo-playground`
+- `docker-compose up` (or toss in the `-d` flag if you prefer)
+- Browse to `http://localhost:8080`
