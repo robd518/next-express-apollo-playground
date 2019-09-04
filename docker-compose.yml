@@ -13,6 +13,8 @@ services:
     volumes:
       - ./app:/app/app
       - ./package.json:/app/package.json
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./tsconfig.server.json:/app/tsconfig.server.json
       - ./node_modules:/app/node_modules
     ports:
       - "8080:8080"
@@ -28,7 +30,7 @@ services:
     env_file: .env
     volumes:
       - ./db/dbdata:/var/lib/mysql
-      - ./db/populate_db.sql:/docker-entrypoint-initdb.d/populate_db.sql
+      # - ./db/populate_db.sql:/docker-entrypoint-initdb.d/populate_db.sql
     ports: 
       - "3306:3306"
     command: --default-authentication-plugin=mysql_native_password

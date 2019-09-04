@@ -60,9 +60,8 @@ typings/
 # next.js build output
 .next
 
-# Data directory for the MySQL database, but keep the directory
-dbdata/*
-!dbdate/0.keepme.txt
+# Data directory for the MySQL database
+dbdata
 
 # Env file
 .env
