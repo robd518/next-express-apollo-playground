@@ -1,0 +1,57 @@
+{
+  "name": "next-express-apollo-playground",
+  "version": "0.0.1",
+  "description": "Trying to get all this shit working together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robd518/next-express-apollo-playground.git"
+  },
+  "keywords": [
+    "nextjs",
+    "next",
+    "express",
+    "apollo",
+    "react",
+    "react-dom"
+  ],
+  "author": "Rob D'Aveta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robd518/next-express-apollo-playground/issues"
+  },
+  "homepage": "https://github.com/robd518/next-express-apollo-playground#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/next": "^8.0.6",
+    "@types/node": "^12.7.4",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "cross-env": "^5.2.1",
+    "dotenv": "^8.1.0",
+    "esm": "^3.2.25",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.6.2"
+  },
+  "dependencies": {
+    "apollo": "^2.18.0",
+    "apollo-datasource": "^0.6.3",
+    "apollo-server-express": "^2.9.3",
+    "express": "^4.17.1",
+    "lodash": "^4.17.15",
+    "mysql": "^2.17.1",
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.18",
+    "url": "^0.11.0"
+  }
+}
