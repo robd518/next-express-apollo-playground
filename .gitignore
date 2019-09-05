@@ -61,7 +61,7 @@ typings/
 .next
 
 # Data directory for the MySQL database
-dbdata
+db/dbdata
 
 # Env file
 .env
