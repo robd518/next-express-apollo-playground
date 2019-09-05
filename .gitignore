@@ -68,3 +68,5 @@ dbdata
 
 # VSCode settings
 .vscode
+
+*.sqlite

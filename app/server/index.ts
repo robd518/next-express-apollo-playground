@@ -9,7 +9,7 @@ import dbconfig from './dbconfig'
 
 
 // Set up our express app
-const host = process.env.HOST || '0.0.0.0'
+const host = process.env.HOST || 'localhost'
 const port = parseInt(process.env.PORT || '8080', 10)
 const app = express()
 app.use('/', PagesRouter)

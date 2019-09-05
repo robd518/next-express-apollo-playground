@@ -4,6 +4,6 @@
         "entity",
         "pages"
     ],
-    "exec": "ts-node --project tsconfig.server.json server/index.ts",
+    "exec": "ts-node --project tsconfig.server.json app/server/index.ts",
     "ext": "js ts"
 }
