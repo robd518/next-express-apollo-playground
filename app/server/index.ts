@@ -3,10 +3,9 @@ import 'reflect-metadata'
 import express from 'express'
 import nextapp from './nextapp'
 import { createConnection } from 'typeorm'
-// import apolloserver from './config/apolloserver'
+import apolloserver from './apolloserver'
 import PagesRouter from './router'
 import dbconfig from './dbconfig'
-
 
 // Set up our express app
 const host = process.env.HOST || '0.0.0.0'
@@ -18,8 +17,8 @@ async function main() {
     try {
         await nextapp.prepare()
         await createConnection(dbconfig)
-        
-        // apolloserver.applyMiddleware({ app })
+
+        apolloserver.applyMiddleware({ app, path: '/graphql' })
 
         app.listen(port, host, () => {
             console.log(`Server listening on ${host}:${port}`)

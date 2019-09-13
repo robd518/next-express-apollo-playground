@@ -1,5 +1,5 @@
 import { MysqlConnectionOptions } from 'typeorm/driver/mysql/MysqlConnectionOptions'
-import { Employee } from '../entity/employee'
+import { Employee } from '../entity/employee.entity'
 
 const dbconfig: MysqlConnectionOptions = {
     type: 'mysql',
