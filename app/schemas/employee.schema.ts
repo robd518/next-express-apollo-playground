@@ -6,13 +6,13 @@ const typeDefs = gql`
     }
 
     type Employee {
-        id: ID!
-        firstname: String
-        lastname: String
+        emp_no: ID!
+        first_name: String
+        last_name: String
     }
 
     type Mutation {
-        createUser(firstname: String!, lastname: String!): Employee
+        addEmployee(first_name: String!, last_name: String!): Employee
     }
 `;
 
