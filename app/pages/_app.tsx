@@ -18,10 +18,8 @@ class MyApp extends App {
         const { Component, pageProps, router } = this.props
         return (
             <ApolloProvider client={client} >
-                i'm
                 <Component {...pageProps} key={router.route} />
             </ApolloProvider>
-
         )
     }
 }
