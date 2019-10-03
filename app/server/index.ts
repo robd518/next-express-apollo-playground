@@ -4,6 +4,7 @@ import express from 'express'
 import nextapp from './nextapp'
 import { createConnection } from 'typeorm'
 import apolloserver from './apolloserver'
+import cors from 'cors'
 import PagesRouter from './router'
 import dbconfig from './dbconfig'
 
@@ -11,6 +12,7 @@ import dbconfig from './dbconfig'
 const host = process.env.HOST || '0.0.0.0'
 const port = parseInt(process.env.PORT || '8080', 10)
 const app = express()
+app.use(cors())
 app.use('/', PagesRouter)
 
 async function main() {
