@@ -1,18 +1,24 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
 
+export interface IEmployees {
+    emp_no: number
+    first_name: string
+    last_name: string
+}
+
 @Entity()
-export class Employee {
-    
+export class Employees {
+
     @PrimaryGeneratedColumn()
-    id: number;
+    emp_no: number;
 
     @Column({
         length: 20
     })
-    lastname: string
+    last_name: string
 
     @Column({
         length: 20
     })
-    firstname: string
+    first_name: string
 }
