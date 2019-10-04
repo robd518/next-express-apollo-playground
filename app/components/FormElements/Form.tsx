@@ -23,8 +23,6 @@ const Form = ({ children, onSubmit }: IFormProps) => {
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log('handleSubmit inside <Form> component')
-        console.log(children)
         onSubmit(children)
     }
 

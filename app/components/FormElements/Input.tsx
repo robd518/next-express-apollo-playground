@@ -18,10 +18,7 @@ const Input = ({ name, placeholder, type }: InputProps) => {
     const [text, setText] = useState('')
 
     const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        console.log('handleOnChange inside <Input>')
-        console.log('e.target.value =', e.target.value)
         setText(e.target.value)
-        console.log('text = ', text)
     }
 
     return (
